@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Address
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="undertaking_sector">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<fieldset class="govuk-fieldset">
+  <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+    <h1 class="govuk-fieldset__heading">
+      What is the registered address of your undertaking?
+    </h1>
+  </legend>
+
+    <form class="form" action="contact" method="post">
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="address-town">
+          Address line 1
+        </label>
+        <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text" autocomplete="address-level2"></div>
+
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="address-town">
+      Address line 2
+    </label>
+    <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text" autocomplete="address-level2"></div>
+
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="address-county">
+      Postcode
+    </label>
+    <input class="govuk-input govuk-!-width-two-thirds" id="address-county" name="address-county" type="text"></div>
+
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="address-postcode">
+      Country code (eg GB)
+    </label>
+    <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text" autocomplete="postal-code"></div>
+
+    <br>
+    <br>
+
+  <button class="govuk-button" data-module="govuk-button">Save & Continue</button>
+
+
+</fieldset>
+
+{% endblock %}
